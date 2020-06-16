@@ -1,0 +1,195 @@
+.card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  // height: 305px;
+  img {
+    width: 160px;
+    height: 160px;
+  }
+  &__ball {
+    font-size: 12px;
+    line-height: 17px;
+    color: #999;
+  }
+  &__right {
+    width: 100%;
+  }
+
+  &__buy {
+    display: flex;
+    margin-top: 10px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    margin-top: 10px;
+    width: 222px;
+    height: 44px;
+    border: 1px solid #ccc;
+    &_warning {
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+      background: url(../../assets/img/unit--i.png) no-repeat;
+      background-size: cover;
+    }
+    span {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  &__btn {
+    background: #f90;
+    width: 148px;
+    cursor: pointer;
+    color: #fff;
+    height: 44px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    padding: 0 25px;
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+      background: #333;
+      color: #fff;
+    }
+    &:active {
+      background: darken($color: #f90, $amount: 10);
+    }
+  }
+
+  &__counter {
+    display: flex;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    &_value {
+      text-align: center;
+      color: #333;
+      font-size: 13px;
+      line-height: 1.2;
+      margin: 0;
+      overflow: hidden;
+      padding: 12px 0 10px;
+      width: 40px;
+      z-index: 49;
+      border: none;
+    }
+    &_button {
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #ccc;
+
+      button {
+        width: 25px;
+        height: 21px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+        &:hover {
+          background-color: #666;
+          color: #fff;
+        }
+        &:active {
+          background-color: darken($color: #efefef, $amount: 10);
+        }
+      }
+      &_up,
+      #btn {
+        border-top: 1px solid #ccc;
+      }
+    }
+  }
+  &__check_price {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-bottom: 1px dotted #707070;
+      margin-right: 10px;
+      padding: 0;
+      font-weight: 700;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  &__code {
+    font-size: 12px;
+    color: #666666;
+    width: 505px;
+    padding: 0px 70px 0 19px;
+  }
+  &__link {
+    font-size: 13px;
+    line-height: 16px;
+    color: #666;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__title,
+  &__assoc {
+    width: 505px;
+    padding: 15px 70px 0 19px;
+    &_link {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__active {
+    cursor: pointer;
+    float: right;
+    color: #093;
+    border-bottom: 1px dotted #093;
+    text-decoration: none;
+    &:hover {
+      border: none;
+    }
+  }
+  &__price {
+    margin-top: 10px;
+    &_club_card {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_text {
+      width: 68px;
+      font-weight: 400;
+      font-size: 14px;
+      display: inline-block;
+      text-align: right;
+      line-height: 17px;
+    }
+    &_price {
+      font-size: 25px;
+      font-weight: 700;
+      color: #000;
+    }
+    &_default {
+      font-size: 25px;
+      font-weight: 700;
+      color: #a7a7a7;
+      text-align: right;
+    }
+  }
+}
