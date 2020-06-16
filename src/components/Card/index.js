@@ -74,13 +74,14 @@ export default function Card({
           <button onClick={()=> setPricevalue(false)} >За м.кв.</button>
           <button onClick={() => setPricevalue(true)} >За упаковку</button>
         </div>
-        <div className="card__info">
-          <div className="card__info_warning"></div>
-          <span>
-            Продается упаковками: <br /> 1 упак. = 2.47 м. кв.
-          </span>
-        </div>
-        <div className="card__buy">
+        <div className="card_wrap">
+          <div className="card__info">
+            <div className="card__info_warning"></div>
+            <span>
+              Продается упаковками: <br /> 1 упак. = 2.47 м. кв.
+            </span>
+          </div>
+          <div className="card__buy">
           <div className="card__counter">
             <input
               onChange={(e) => setCounter(e.target.value)}
@@ -102,6 +103,7 @@ export default function Card({
           <button data-product-id={productId} className="card__btn">
             В корзину
           </button>
+        </div>
         </div>
       </div>
     </div>
